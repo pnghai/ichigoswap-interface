@@ -37,7 +37,7 @@ const BodyWrapper = styled.div`
   overflow-x: hidden;
   z-index: 1;
   justify-content: center;
-  background-image: url('/images/group-strawberry.svg');
+  background-image: url('/images/left_right.png');
   background-repeat: no-repeat;
   background-position: bottom 24px center;
   background-size: 90%;
@@ -48,7 +48,7 @@ const BodyWrapper = styled.div`
 
   ${({ theme }) => theme.mediaQueries.lg} {
     background-image: url('/images/arch-${({ theme }) => (theme.isDark ? 'dark' : 'light')}.svg'),
-      url('/images/left-strawberry.svg'), url('/images/right-strawberry.svg');
+      url('/images/left.png'), url('/images/right.png');
     background-repeat: no-repeat;
     background-position: center 420px, 10% 230px, 90% 230px;
     background-size: contain, 266px, 266px;
