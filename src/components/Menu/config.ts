@@ -4,7 +4,7 @@ const config: MenuEntry[] = [
   {
     label: 'Home',
     icon: 'HomeIcon',
-    href: 'http://strawberryswap.link/',
+    href: 'https://strawberryswap.link/',
   },
   {
     label: 'Trade',
@@ -24,22 +24,22 @@ const config: MenuEntry[] = [
   {
     label: 'Farms',
     icon: 'FarmIcon',
-    href: 'http://strawberryswap.link/farms',
+    href: 'https://strawberryswap.link/farms',
   },
   {
     label: 'Pools',
     icon: 'PoolIcon',
-    href: 'http://strawberryswap.link/leaf',
+    href: 'https://strawberryswap.link/leaf',
   },
   {
     label: 'Lottery',
     icon: 'TicketIcon',
-    href: 'http://strawberryswap.link/lottery',
+    href: 'https://strawberryswap.link/lottery',
   },
   {
     label: 'NFT',
     icon: 'NftIcon',
-    href: 'http://strawberryswap.link/nft',
+    href: 'https://strawberryswap.link/nft',
   },
   {
     label: 'Teams & Profile',
@@ -48,15 +48,15 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Leaderboard',
-        href: 'http://strawberryswap.link/teams',
+        href: 'https://strawberryswap.link/teams',
       },
       {
         label: 'Task Center',
-        href: 'http://strawberryswap.link/profile/tasks',
+        href: 'https://strawberryswap.link/profile/tasks',
       },
       {
         label: 'Your Profile',
-        href: 'http://strawberryswap.link/profile',
+        href: 'https://strawberryswap.link/profile',
       },
     ],
   },
@@ -66,26 +66,26 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Overview',
-        href: 'http://info.strawberryswap.link',
+        href: 'https://info.strawberryswap.link',
       },
       {
         label: 'Tokens',
-        href: 'http://info.strawberryswap.link/tokens',
+        href: 'https://info.strawberryswap.link/tokens',
       },
       {
         label: 'Pairs',
-        href: 'http://info.strawberryswap.link/pairs',
+        href: 'https://info.strawberryswap.link/pairs',
       },
       {
         label: 'Accounts',
-        href: 'http://info.strawberryswap.link/accounts',
+        href: 'https://info.strawberryswap.link/accounts',
       },
     ],
   },
   {
     label: 'IFO',
     icon: 'IfoIcon',
-    href: 'http://strawberryswap.link/ifo',
+    href: 'https://strawberryswap.link/ifo',
   },
   {
     label: 'More',
@@ -93,7 +93,7 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Voting',
-        href: 'http://voting.strawberryswap.link',
+        href: 'https://voting.strawberryswap.link',
       },
       {
         label: 'Github',
