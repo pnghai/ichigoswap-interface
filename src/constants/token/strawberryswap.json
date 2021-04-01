@@ -7,7 +7,7 @@
     "patch": 0
   },
   "tags": {},
-  "logoURI": "https://exchange.strawberryswap.link/images/strawberryswap.png",
+  "logoURI": "/images/strawberryswap.png",
   "keywords": ["strawberry", "default"],
   "tokens": [
     {
@@ -208,7 +208,7 @@
       "address": "0x1923d2eFCa291C0B280DbBF3923019374C2bb3D1",
       "chainId": 97,
       "decimals": 18,
-      "logoURI": "https://exchange.strawberryswap.link/images/coins/stbe.png"
+      "logoURI": "/images/coins/stbe.png"
     },
     {
       "name": "Streamity",
