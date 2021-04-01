@@ -89,8 +89,7 @@ export function tryParseAmount(value?: string, currency?: Currency): CurrencyAmo
 // TODO : what is this for?
 const BAD_RECIPIENT_ADDRESSES: string[] = [
   '0x8775918265e7134518f2100Da0ae4Bfe31eEaAf0', // v2 factory
-  '0xdB03cB619f012FE45033B20EE83A781A423A48F3', // v2 router 01
-  '0x72aa3620fC523A006aa4501A71c4a9C777D7ae1e', // v2 router 02 TODO: pancakerouter -> strawberryrouter
+  '0x2669d0367DF20452bC7E3fAF38743fD407399A7f', // v2 router 02 TODO: pancakerouter -> strawberryrouter
 ]
 
 /**
