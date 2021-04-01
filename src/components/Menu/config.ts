@@ -36,57 +36,57 @@ const config: MenuEntry[] = [
     icon: 'TicketIcon',
     href: 'https://strawberryswap.link/lottery',
   },
-  {
-    label: 'NFT',
-    icon: 'NftIcon',
-    href: 'https://strawberryswap.link/nft',
-  },
-  {
-    label: 'Teams & Profile',
-    icon: 'GroupsIcon',
-    calloutClass: 'rainbow',
-    items: [
-      {
-        label: 'Leaderboard',
-        href: 'https://strawberryswap.link/teams',
-      },
-      {
-        label: 'Task Center',
-        href: 'https://strawberryswap.link/profile/tasks',
-      },
-      {
-        label: 'Your Profile',
-        href: 'https://strawberryswap.link/profile',
-      },
-    ],
-  },
-  {
-    label: 'Info',
-    icon: 'InfoIcon',
-    items: [
-      {
-        label: 'Overview',
-        href: 'https://info.strawberryswap.link',
-      },
-      {
-        label: 'Tokens',
-        href: 'https://info.strawberryswap.link/tokens',
-      },
-      {
-        label: 'Pairs',
-        href: 'https://info.strawberryswap.link/pairs',
-      },
-      {
-        label: 'Accounts',
-        href: 'https://info.strawberryswap.link/accounts',
-      },
-    ],
-  },
-  {
-    label: 'IFO',
-    icon: 'IfoIcon',
-    href: 'https://strawberryswap.link/ifo',
-  },
+  // {
+  //   label: 'NFT',
+  //   icon: 'NftIcon',
+  //   href: 'https://strawberryswap.link/nft',
+  // },
+  // {
+  //   label: 'Teams & Profile',
+  //   icon: 'GroupsIcon',
+  //   calloutClass: 'rainbow',
+  //   items: [
+  //     {
+  //       label: 'Leaderboard',
+  //       href: 'https://strawberryswap.link/teams',
+  //     },
+  //     {
+  //       label: 'Task Center',
+  //       href: 'https://strawberryswap.link/profile/tasks',
+  //     },
+  //     {
+  //       label: 'Your Profile',
+  //       href: 'https://strawberryswap.link/profile',
+  //     },
+  //   ],
+  // },
+  // {
+  //   label: 'Info',
+  //   icon: 'InfoIcon',
+  //   items: [
+  //     {
+  //       label: 'Overview',
+  //       href: 'https://info.strawberryswap.link',
+  //     },
+  //     {
+  //       label: 'Tokens',
+  //       href: 'https://info.strawberryswap.link/tokens',
+  //     },
+  //     {
+  //       label: 'Pairs',
+  //       href: 'https://info.strawberryswap.link/pairs',
+  //     },
+  //     {
+  //       label: 'Accounts',
+  //       href: 'https://info.strawberryswap.link/accounts',
+  //     },
+  //   ],
+  // },
+  // {
+  //   label: 'IFO',
+  //   icon: 'IfoIcon',
+  //   href: 'https://strawberryswap.link/ifo',
+  // },
   {
     label: 'More',
     icon: 'MoreIcon',
