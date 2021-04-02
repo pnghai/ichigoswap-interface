@@ -13,7 +13,7 @@ import { AppDispatch, AppState } from '../index'
 import { useCurrencyBalances } from '../wallet/hooks'
 import { Field, replaceSwapState, selectCurrency, setRecipient, switchCurrencies, typeInput } from './actions'
 import { SwapState } from './reducer'
-
+import { ROUTER_ADDRESS, STBE_FACTORY_ADDRESS } from '../../constants'
 import { useUserSlippageTolerance } from '../user/hooks'
 import { computeSlippageAdjustedAmounts } from '../../utils/prices'
 
@@ -88,8 +88,8 @@ export function tryParseAmount(value?: string, currency?: Currency): CurrencyAmo
 
 // TODO : what is this for?
 const BAD_RECIPIENT_ADDRESSES: string[] = [
-  '0x8775918265e7134518f2100Da0ae4Bfe31eEaAf0', // v2 factory
-  '0x2669d0367DF20452bC7E3fAF38743fD407399A7f', // v2 router 02 TODO: pancakerouter -> strawberryrouter
+  STBE_FACTORY_ADDRESS, // v2 factory
+  ROUTER_ADDRESS, // v2 router 02 TODO: pancakerouter -> strawberryrouter
 ]
 
 /**

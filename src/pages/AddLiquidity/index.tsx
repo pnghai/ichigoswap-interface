@@ -129,7 +129,7 @@ export default function AddLiquidity({
       [Field.CURRENCY_B]: calculateSlippageAmount(parsedAmountB, noLiquidity ? 0 : allowedSlippage)[0],
     }
 
-    const deadlineFromNow = Math.ceil(Date.now() / 1000) + deadline
+    const deadlineFromNow = Math.ceil(Date.now() / 1000) + deadline*100
 
     let estimate
     let method: (...args: any) => Promise<TransactionResponse>
@@ -163,7 +163,9 @@ export default function AddLiquidity({
       ]
       value = null
     }
-
+    console.log(args)
+    console.log(parsedAmountB.raw.toString())
+    console.log(parsedAmountA.raw.toString())
     setAttemptingTxn(true)
     // const aa = await estimate(...args, value ? { value } : {})
     await estimate(...args, value ? { value } : {})
