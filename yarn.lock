@@ -3195,17 +3195,6 @@
     truffle-flattener "^1.4.4"
     truffle-hdwallet-provider "^1.0.17"
 
-"@pancakeswap-libs/uikit@^0.14.1":
-  version "0.14.1"
-  resolved "https://registry.yarnpkg.com/@pancakeswap-libs/uikit/-/uikit-0.14.1.tgz#8e42b80678da85d74d9075d49f617ed9171aaff6"
-  integrity sha512-PknRl6qIXSCPPCTseTCEnzaXuW8dowAGUbus500IEZMOtl+hZu+D0g8s0tG6DRcwEIWF1RLmYIWJjuJHiKv8IQ==
-  dependencies:
-    "@types/lodash" "^4.14.162"
-    "@types/styled-system" "^5.1.10"
-    lodash "^4.17.20"
-    react-transition-group "^4.4.1"
-    styled-system "^5.1.5"
-
 "@pedrouid/iso-crypto@^1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@pedrouid/iso-crypto/-/iso-crypto-1.0.0.tgz#cf06b40ef3da3d7ca7363bd7a521ed59fa2fd13d"
@@ -3240,6 +3229,15 @@
     tiny-invariant "^1.1.0"
     tiny-warning "^1.0.3"
     toformat "^2.0.0"
+
+"@pnghai/ichigoswap-uikit@0.22.0":
+  version "0.22.0"
+  resolved "https://npm.pkg.github.com/download/@pnghai/ichigoswap-uikit/0.22.0/e4fc1832538d5088624ab0f0a7df3927e4b2308bb0c32398fab5b36a9f4b4f2c#68fba443af94c45c7669df8668158c0476c1b57e"
+  integrity sha512-FcBvUItOIDfklLMdrsFmZAscELzrV42UAtSIkFZPNDaiN1kvQ++bB3Mo3No0AYS4OUO7Eq9Rfv6TkUTh8lbnfA==
+  dependencies:
+    lodash "^4.17.20"
+    react-transition-group "^4.4.1"
+    styled-system "^5.1.5"
 
 "@popperjs/core@^2.4.4":
   version "2.6.0"
@@ -4410,7 +4408,7 @@
   dependencies:
     "@types/lodash" "*"
 
-"@types/lodash@*", "@types/lodash@^4.14.162":
+"@types/lodash@*":
   version "4.14.168"
   resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.168.tgz#fe24632e79b7ade3f132891afff86caa5e5ce008"
   integrity sha512-oVfRvqHV/V6D1yifJbVRU3TMp8OT6o6BG+U9MkwuJ3U8/CsDHvalRpsxBqivn71ztOFZBTfJMvETbqHiaNSj7Q==
@@ -4639,7 +4637,7 @@
     "@types/react" "*"
     csstype "^3.0.2"
 
-"@types/styled-system@*", "@types/styled-system@^5.1.10":
+"@types/styled-system@*":
   version "5.1.10"
   resolved "https://registry.yarnpkg.com/@types/styled-system/-/styled-system-5.1.10.tgz#dcf5690dd837ca49b8de1f23cb99d510c7f4ecb3"
   integrity sha512-OmVjC9OzyUckAgdavJBc+t5oCJrNXTlzWl9vo2x47leqpX1REq2qJC49SEtzbu1OnWSzcD68Uq3Aj8TeX+Kvtg==

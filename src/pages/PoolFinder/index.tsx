@@ -1,6 +1,6 @@
 import { Currency, ETHER, JSBI, TokenAmount } from '@pnghai/ichigoswap-sdk'
 import React, { useCallback, useEffect, useState } from 'react'
-import { Button, ChevronDownIcon, AddIcon, CardBody, Text } from '@pancakeswap-libs/uikit'
+import { Button, ChevronDownIcon, AddIcon, CardBody, Text } from '@pnghai/ichigoswap-uikit'
 import CardNav from 'components/CardNav'
 import { LightCard } from 'components/Card'
 import { AutoColumn, ColumnCenter } from 'components/Column'
