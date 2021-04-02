@@ -163,9 +163,6 @@ export default function AddLiquidity({
       ]
       value = null
     }
-    console.log(args)
-    console.log(parsedAmountB.raw.toString())
-    console.log(parsedAmountA.raw.toString())
     setAttemptingTxn(true)
     // const aa = await estimate(...args, value ? { value } : {})
     await estimate(...args, value ? { value } : {})

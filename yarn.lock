@@ -3217,10 +3217,10 @@
     schema-utils "^2.6.5"
     source-map "^0.7.3"
 
-"@pnghai/ichigoswap-sdk@1.0.1":
-  version "1.0.1"
-  resolved "https://npm.pkg.github.com/download/@pnghai/ichigoswap-sdk/1.0.1/b49cf4df396d867210cc81be65f1f32ac6cb92ee76996adca371c93032610b08#981ddee3ef0239de4a4740b6dd211308eb851c3d"
-  integrity sha512-efhlYBZ2heM8hbdq53vdZBIbaNMt/nlDc3VmONoALOe2mxqDXlxc9qJsi37bqTkIb+6Cz+KPq4KY8z3IHFAL7w==
+"@pnghai/ichigoswap-sdk@1.0.2":
+  version "1.0.2"
+  resolved "https://npm.pkg.github.com/download/@pnghai/ichigoswap-sdk/1.0.2/d6ac11cdbc9df0ec3102829209812dfd5716bea11477c4be43778278d3027129#23bc49ccb1be8b47568f5012f1ed084b8bb76dc6"
+  integrity sha512-hTr6yhIvXu9pp+Rdgc3psP9PcNc5eyBFZfrPwJT6DaBHUSJZp2GUL15KYGBDTzVqVSAq9rT0CFkkyTBT5Rj6XA==
   dependencies:
     "@pancakeswap-libs/pancake-swap-core" "^0.1.0"
     big.js "^5.2.2"
