@@ -28,7 +28,6 @@ export const ETH = new Token(
   'Binance-Peg Ethereum Token'
 )
 export const BETH = new Token(ChainId.MAINNET, '0x250632378E573c6Be1AC2f97Fcdf00515d0Aa91B', 18, 'BETH', 'Binance Beacon Ethereum Token')
-export const BTCB = new Token(ChainId.MAINNET, '0x7130d2a12b9bcbfae4f2634d864a1ee1ce3ead9c', 18, 'BTCB', 'Binance BTC')
 export const MSTBE = new Token(ChainId.MAINNET, '0x603c7f932ED1fc6575303D8Fb018fDCBb0f39a95', 18, 'STBE', 'ApeSwap token')
 export const STBE = new Token(ChainId.BSCTESTNET, '0xC987BEA2149629ff83C11FfAbfD07b45ecb94700', 18, 'STBE', 'ApeSwap Token')
 export const TBUSD = new Token(ChainId.BSCTESTNET, '0xed24fc36d5ee211ea25a80239fb8c4cfd80f12ee', 18, 'BUSD', 'Testnet Binance USD')
