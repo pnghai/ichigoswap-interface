@@ -92,6 +92,10 @@ const config: MenuEntry[] = [
     icon: 'MoreIcon',
     items: [
       {
+        label: 'Contact',
+        href: 'https://docs.pancakeswap.finance/contact-us',
+      },
+      {
         label: 'Voting',
         href: 'https://voting.strawberryswap.link',
       },
@@ -106,6 +110,10 @@ const config: MenuEntry[] = [
       {
         label: 'Blog',
         href: 'https://pancakeswap.medium.com',
+      },
+      {
+        label: 'Merch',
+        href: 'https://pancakeswap.creator-spring.com/',
       },
     ],
   },
