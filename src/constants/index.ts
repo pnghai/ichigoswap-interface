@@ -28,7 +28,7 @@ export const ETH = new Token(
   'Binance-Peg Ethereum Token'
 )
 export const BETH = new Token(ChainId.MAINNET, '0x250632378E573c6Be1AC2f97Fcdf00515d0Aa91B', 18, 'BETH', 'Binance Beacon Ethereum Token')
-export const STBE = new Token(ChainId.MAINNET, '', 18, 'STBE', 'StrawberrySwap token')
+export const STBE = new Token(ChainId.MAINNET, '0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82', 18, 'STBE', 'StrawberrySwap token') // todo mainnet contract of token
 export const TSTBE = new Token(ChainId.BSCTESTNET, '0x1923d2eFCa291C0B280DbBF3923019374C2bb3D1', 18, 'STBE', 'StrawberrySwap Token')
 export const TBUSD = new Token(ChainId.BSCTESTNET, '0xed24fc36d5ee211ea25a80239fb8c4cfd80f12ee', 18, 'BUSD', 'Testnet Binance USD')
 export const TETH = new Token(ChainId.BSCTESTNET, '0xd66c6b4f0be8ce5b39d52e0fd1344c389929b378', 18, 'ETH', 'Testnet Binance ETH')
