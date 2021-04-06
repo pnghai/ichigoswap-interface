@@ -203,6 +203,22 @@
       "logoURI": "https://exchange.strawberryswap.link/images/coins/0x7083609fce4d1d8dc0c979aab8c869ea2c873402.png"
     },
     {
+      "name": "PancakeSwap Token",
+      "symbol": "CAKE",
+      "address": "0x82897976c5336dfe40fec5ad0f2a77bf88e87127",
+      "chainId": 97,
+      "decimals": 18,
+      "logoURI": "https://exchange.pancakeswap.finance/images/coins/0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82.png"
+    }
+    {
+      "name": "PancakeSwap Token",
+      "symbol": "CAKE",
+      "address": "0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://exchange.pancakeswap.finance/images/coins/0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82.png"
+    },
+    {
       "name": "StrawberrySwap Token",
       "symbol": "STBE",
       "address": "0x1923d2eFCa291C0B280DbBF3923019374C2bb3D1",
@@ -1067,20 +1083,28 @@
       "logoURI": "https://exchange.pancakeswap.finance/images/coins/0xbcf39f0edda668c58371e519af37ca705f2bfcbd.png"
     },
     {
-      "name": "PancakeSwap Token",
-      "symbol": "CAKE",
-      "address": "0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82",
+      "name": "Zilliqa",
+      "symbol": "ZIL",
+      "address": "0xb86abcb37c3a4b64f74f59301aff131a1becc787",
       "chainId": 56,
-      "decimals": 18,
-      "logoURI": "https://exchange.pancakeswap.finance/images/coins/0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82.png"
+      "decimals": 12,
+      "logoURI": "https://exchange.pancakeswap.finance/images/coins/0xb86abcb37c3a4b64f74f59301aff131a1becc787.png"
     },
     {
-      "name": "PancakeSwap Token",
-      "symbol": "CAKE",
-      "address": "0x82897976c5336dfe40fec5ad0f2a77bf88e87127",
-      "chainId": 97,
-      "decimals": 18,
-      "logoURI": "https://exchange.pancakeswap.finance/images/coins/0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82.png"
+      "name": "Lien",
+      "symbol": "LIEN",
+      "address": "0x5d684adaf3fcfe9cfb5cede3abf02f0cdd1012e3",
+      "chainId": 56,
+      "decimals": 8,
+      "logoURI": "https://exchange.pancakeswap.finance/images/coins/0x5d684adaf3fcfe9cfb5cede3abf02f0cdd1012e3.png"
+    },
+    {
+      "name": "Switcheo",
+      "symbol": "SWTH",
+      "address": "0x250b211EE44459dAd5Cd3bCa803dD6a7EcB5d46C",
+      "chainId": 56,
+      "decimals": 8,
+      "logoURI": "https://exchange.pancakeswap.finance/images/coins/0x250b211EE44459dAd5Cd3bCa803dD6a7EcB5d46C.png"
     }
   ]
 }

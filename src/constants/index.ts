@@ -28,8 +28,8 @@ export const ETH = new Token(
   'Binance-Peg Ethereum Token'
 )
 export const BETH = new Token(ChainId.MAINNET, '0x250632378E573c6Be1AC2f97Fcdf00515d0Aa91B', 18, 'BETH', 'Binance Beacon Ethereum Token')
-export const MSTBE = new Token(ChainId.MAINNET, '0x603c7f932ED1fc6575303D8Fb018fDCBb0f39a95', 18, 'STBE', 'ApeSwap token')
-export const STBE = new Token(ChainId.BSCTESTNET, '0xC987BEA2149629ff83C11FfAbfD07b45ecb94700', 18, 'STBE', 'ApeSwap Token')
+export const STBE = new Token(ChainId.MAINNET, '', 18, 'STBE', 'StrawberrySwap token')
+export const TSTBE = new Token(ChainId.BSCTESTNET, '0x1923d2eFCa291C0B280DbBF3923019374C2bb3D1', 18, 'STBE', 'StrawberrySwap Token')
 export const TBUSD = new Token(ChainId.BSCTESTNET, '0xed24fc36d5ee211ea25a80239fb8c4cfd80f12ee', 18, 'BUSD', 'Testnet Binance USD')
 export const TETH = new Token(ChainId.BSCTESTNET, '0xd66c6b4f0be8ce5b39d52e0fd1344c389929b378', 18, 'ETH', 'Testnet Binance ETH')
 export const TBTC = new Token(ChainId.BSCTESTNET, '0x6ce8da28e2f864420840cf74474eff5fd80e65b8', 18, 'BTCB', 'Testnet Binance BTC')
@@ -43,8 +43,8 @@ const WETH_ONLY: ChainTokenList = {
 // used to construct intermediary pairs for trading
 export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
   ...WETH_ONLY,
-  [ChainId.MAINNET]: [...WETH_ONLY[ChainId.MAINNET], DAI, BUSD, BTCB, USDT, UST, ETH, MSTBE],
-  [ChainId.BSCTESTNET]: [...WETH_ONLY[ChainId.BSCTESTNET], STBE, TBUSD]
+  [ChainId.MAINNET]: [...WETH_ONLY[ChainId.MAINNET], DAI, BUSD, BTCB, USDT, UST, ETH, STBE],
+  [ChainId.BSCTESTNET]: [...WETH_ONLY[ChainId.BSCTESTNET], TSTBE, TBUSD]
 }
 
 /**
@@ -65,14 +65,14 @@ export const SUGGESTED_BASES: ChainTokenList = {
 // used to construct the list of all pairs we consider by default in the frontend
 export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
   ...WETH_ONLY,
-  [ChainId.MAINNET]: [...WETH_ONLY[ChainId.MAINNET], DAI, BUSD, BTCB, USDT, MSTBE],
-  [ChainId.BSCTESTNET]: [...WETH_ONLY[ChainId.BSCTESTNET], STBE, TBUSD, TETH, TBTC]
+  [ChainId.MAINNET]: [...WETH_ONLY[ChainId.MAINNET], DAI, BUSD, BTCB, USDT, STBE],
+  [ChainId.BSCTESTNET]: [...WETH_ONLY[ChainId.BSCTESTNET], TSTBE, TBUSD, TETH, TBTC]
 }
 
 export const PINNED_PAIRS: { readonly [chainId in ChainId]?: [Token, Token][] } = {
   [ChainId.MAINNET]: [
     [
-      new Token(ChainId.MAINNET, '0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82', 18, 'STBE', 'StrawberrySwap Token'),
+      STBE,
       new Token(ChainId.MAINNET, '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c', 18, 'WBNB', 'Wrapped BNB'),
     ],
     [BUSD, USDT],
@@ -80,7 +80,7 @@ export const PINNED_PAIRS: { readonly [chainId in ChainId]?: [Token, Token][] } 
   ],
   [ChainId.BSCTESTNET]: [
     [
-      new Token(ChainId.BSCTESTNET, '0x1923d2eFCa291C0B280DbBF3923019374C2bb3D1', 18, 'STBE', 'StrawberrySwap Token'),
+      TSTBE,
       new Token(ChainId.BSCTESTNET, '0xae13d989dac2f0debff460ac112a837c89baa7cd', 18, 'WBNB', 'Wrapped BNB'),
     ],
   ],
