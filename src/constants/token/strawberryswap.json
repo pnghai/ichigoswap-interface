@@ -43,6 +43,14 @@
       "logoURI": "https://exchange.strawberryswap.link/images/coins/0xe9e7cea3dedca5984780bafc599bd69add087d56.png"
     },
     {
+      "name": "BUSD Token",
+      "symbol": "BUSD",
+      "address": "0xed24fc36d5ee211ea25a80239fb8c4cfd80f12ee",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://exchange.strawberryswap.link/images/coins/0xed24fc36d5ee211ea25a80239fb8c4cfd80f12ee.png"
+    },
+    {
       "name": "Ethereum Token",
       "symbol": "ETH",
       "address": "0xd66c6b4f0be8ce5b39d52e0fd1344c389929b378",
