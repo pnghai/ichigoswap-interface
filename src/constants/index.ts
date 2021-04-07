@@ -1,7 +1,7 @@
 import { ChainId, JSBI, Percent, Token, WETH } from '@pnghai/ichigoswap-sdk'
 
-export const ROUTER_ADDRESS = process.env.REACT_APP_ROUTER_ADDRESS || '0x367Dc8f92718fF38b12490D324BC3c2359744974'
-export const STBE_FACTORY_ADDRESS = process.env.STBE_FACTORY_ADDRESS || '0x8775918265e7134518f2100Da0ae4Bfe31eEaAf0'
+export const ROUTER_ADDRESS = process.env.REACT_APP_ROUTER_ADDRESS || '0x180223b04A1Da0Bb059a25a42D3354a726E45d1d'
+export const STBE_FACTORY_ADDRESS = process.env.STBE_FACTORY_ADDRESS || '0xAA6301bDC1Fd7D673D85C7962762e4B64973CD6C'
 export const INIT_CODE = process.env.INIT_CODE ||  '0x351e068bf9ed8b5fc37ce956f40ca9614882402b3bdb61800be1258f1108b4b6'
 
 // a list of tokens by chain
@@ -29,8 +29,8 @@ export const ETH = new Token(
   'Binance-Peg Ethereum Token'
 )
 export const BETH = new Token(ChainId.MAINNET, '0x250632378E573c6Be1AC2f97Fcdf00515d0Aa91B', 18, 'BETH', 'Binance Beacon Ethereum Token')
-export const STBE = new Token(ChainId.MAINNET, '0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82', 18, 'STBE', 'StrawberrySwap token') // todo mainnet contract of token
-export const TSTBE = new Token(ChainId.BSCTESTNET, '0x1923d2eFCa291C0B280DbBF3923019374C2bb3D1', 18, 'STBE', 'StrawberrySwap Token')
+export const STBE = new Token(ChainId.MAINNET, '0x641f5D9220b5d15A2A62455c61ef0455c34ECF11', 18, 'STBE', 'StrawberrySwap token') // todo mainnet contract of token
+export const TSTBE = new Token(ChainId.BSCTESTNET, '0x641f5D9220b5d15A2A62455c61ef0455c34ECF11', 18, 'STBE', 'StrawberrySwap Token')
 export const TBUSD = new Token(ChainId.BSCTESTNET, '0xed24fc36d5ee211ea25a80239fb8c4cfd80f12ee', 18, 'BUSD', 'Testnet Binance USD')
 export const TETH = new Token(ChainId.BSCTESTNET, '0xd66c6b4f0be8ce5b39d52e0fd1344c389929b378', 18, 'ETH', 'Testnet Binance ETH')
 export const TBTC = new Token(ChainId.BSCTESTNET, '0x6ce8da28e2f864420840cf74474eff5fd80e65b8', 18, 'BTCB', 'Testnet Binance BTC')
