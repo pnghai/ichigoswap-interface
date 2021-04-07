@@ -1,21 +1,22 @@
 import { useEffect } from 'react'
 import useGetPriceData from './useGetPriceData'
+import { STBE } from '../constants'
 
 const useGetDocumentTitlePrice = () => {
   const priceData = useGetPriceData()
 
-  const cakePriceUsd = priceData ? parseFloat(priceData.prices.Cake) : 0
+  const stbePriceUsd = priceData ? parseFloat(priceData.data[STBE.address].price) : 0
 
-  const cakePriceUsdString =
-    Number.isNaN(cakePriceUsd) || cakePriceUsd === 0
+  const stbePriceUsdString =
+    Number.isNaN(stbePriceUsd) || stbePriceUsd === 0
       ? ''
-      : ` - $${cakePriceUsd.toLocaleString(undefined, {
+      : ` - $${stbePriceUsd.toLocaleString(undefined, {
           minimumFractionDigits: 3,
           maximumFractionDigits: 3,
         })}`
 
   useEffect(() => {
-    document.title = `StrawberrySwap${cakePriceUsdString}`
-  }, [cakePriceUsdString])
+    document.title = `StrawberrySwap${stbePriceUsdString}`
+  }, [stbePriceUsdString])
 }
 export default useGetDocumentTitlePrice

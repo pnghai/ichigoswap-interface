@@ -8,6 +8,7 @@ import useGetPriceData from 'hooks/useGetPriceData'
 import useGetLocalProfile from 'hooks/useGetLocalProfile'
 import useAuth from 'hooks/useAuth'
 import links from './config'
+import { STBE } from '../../constants'
 
 const Menu: React.FC = (props) => {
   const { account } = useWeb3React()
@@ -15,7 +16,7 @@ const Menu: React.FC = (props) => {
   const { selectedLanguage, setSelectedLanguage } = useContext(LanguageContext)
   const { isDark, toggleTheme } = useTheme()
   const priceData = useGetPriceData()
-  const stbePriceUsd = priceData ? Number(priceData.prices.Stbe) : undefined
+  const stbePriceUsd = priceData ? Number(priceData.data[STBE.address].price) : undefined
   const profile = useGetLocalProfile()
 
   return (
