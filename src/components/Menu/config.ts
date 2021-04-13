@@ -4,7 +4,7 @@ const config: MenuEntry[] = [
   {
     label: 'Home',
     icon: 'HomeIcon',
-    href: 'https://strawberryswap.link/',
+    href: 'https://test.strawberryswap.link/',
   },
   {
     label: 'Trade',
@@ -24,22 +24,22 @@ const config: MenuEntry[] = [
   {
     label: 'Farms',
     icon: 'FarmIcon',
-    href: 'https://strawberryswap.link/farms',
+    href: 'https://test.strawberryswap.link/farms',
   },
   {
     label: 'Pools',
     icon: 'PoolIcon',
-    href: 'https://strawberryswap.link/leaf',
+    href: 'https://test.strawberryswap.link/leaf',
   },
   {
     label: 'Lottery',
     icon: 'TicketIcon',
-    href: 'https://strawberryswap.link/lottery',
+    href: 'https://test.strawberryswap.link/lottery',
   },
   // {
   //   label: 'NFT',
   //   icon: 'NftIcon',
-  //   href: 'https://strawberryswap.link/nft',
+  //   href: 'https://test.strawberryswap.link/nft',
   // },
   // {
   //   label: 'Teams & Profile',
@@ -48,15 +48,15 @@ const config: MenuEntry[] = [
   //   items: [
   //     {
   //       label: 'Leaderboard',
-  //       href: 'https://strawberryswap.link/teams',
+  //       href: 'https://test.strawberryswap.link/teams',
   //     },
   //     {
   //       label: 'Task Center',
-  //       href: 'https://strawberryswap.link/profile/tasks',
+  //       href: 'https://test.strawberryswap.link/profile/tasks',
   //     },
   //     {
   //       label: 'Your Profile',
-  //       href: 'https://strawberryswap.link/profile',
+  //       href: 'https://test.strawberryswap.link/profile',
   //     },
   //   ],
   // },
@@ -85,7 +85,7 @@ const config: MenuEntry[] = [
   // {
   //   label: 'IFO',
   //   icon: 'IfoIcon',
-  //   href: 'https://strawberryswap.link/ifo',
+  //   href: 'https://test.strawberryswap.link/ifo',
   // },
   {
     label: 'More',
