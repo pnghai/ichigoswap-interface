@@ -17,7 +17,6 @@
       "chainId": 56,
       "decimals": 18,
       "logoURI": "https://exchange.pancakeswap.finance/images/coins/0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c.png"
-
     },
     {
       "name": "Bakery Token",
@@ -1178,6 +1177,46 @@
       "chainId": 56,
       "decimals": 18,
       "logoURI": "https://exchange.pancakeswap.finance/images/coins/0x9f589e3eabe42ebc94a44727b3f3531c0c877809.png"
+    },
+    {
+      "name": "Itam",
+      "symbol": "ITAM",
+      "address": "0x04c747b40be4d535fc83d09939fb0f626f32800b",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://exchange.pancakeswap.finance/images/coins/0x04c747b40be4d535fc83d09939fb0f626f32800b.png"
+    },
+    {
+      "name": "ARPA",
+      "symbol": "ARPA",
+      "address": "0x6f769e65c14ebd1f68817f5f1dcdb61cfa2d6f7e",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://exchange.pancakeswap.finance/images/coins/0x6f769e65c14ebd1f68817f5f1dcdb61cfa2d6f7e.png"
+    },
+    {
+      "name": "Perlin X",
+      "symbol": "PERL",
+      "address": "0x0f9e4d49f25de22c2202af916b681fbb3790497b",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://exchange.pancakeswap.finance/images/coins/0x0f9e4d49f25de22c2202af916b681fbb3790497b.png"
+    },
+    {
+      "name": "Juggernaut Finance",
+      "symbol": "JGN",
+      "address": "0xc13b7a43223bb9bf4b69bd68ab20ca1b79d81c75",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://exchange.pancakeswap.finance/images/coins/0xc13b7a43223bb9bf4b69bd68ab20ca1b79d81c75.png"
+    },
+    {
+      "name": "Alien Worlds",
+      "symbol": "TLM",
+      "address": "0x2222227e22102fe3322098e4cbfe18cfebd57c95",
+      "chainId": 56,
+      "decimals": 4,
+      "logoURI": "https://exchange.pancakeswap.finance/images/coins/0x2222227e22102fe3322098e4cbfe18cfebd57c95.png"
     }
   ]
 }

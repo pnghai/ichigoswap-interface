@@ -29,7 +29,7 @@ const config: MenuEntry[] = [
   {
     label: 'Pools',
     icon: 'PoolIcon',
-    href: 'https://test1.strawberryswap.link/leaf',
+    href: 'https://test1.strawberryswap.link/pools',
   },
   {
     label: 'Lottery',
