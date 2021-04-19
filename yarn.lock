@@ -3208,14 +3208,16 @@
     tiny-warning "^1.0.3"
     toformat "^2.0.0"
 
-"@pancakeswap-libs/uikit@^0.23.0":
-  version "0.23.0"
-  resolved "https://registry.yarnpkg.com/@pancakeswap-libs/uikit/-/uikit-0.23.0.tgz#34f70a9fdc5e22a68b01055eb34e332a39c1e43c"
-  integrity sha512-3R6KuXcS5NJ4BNT1zL17T1oUimyky8CpvTVo/fsSrYYudgq+ra5E5T7srvt+uQTOI0ZFiGn9WORmD/ecT6ZKjg==
+"@pancakeswap-libs/uikit@^0.25.3":
+  version "0.25.3"
+  resolved "https://registry.yarnpkg.com/@pancakeswap-libs/uikit/-/uikit-0.25.3.tgz#4c333c7af1772ffe882c0f1ee365de4edf2033ea"
+  integrity sha512-+lRdMrI+pWG0Gedj94kYc1F9iz2whugG4R0iZq5tKv5mn3tQgqdsTn94g1+f7Jb7B9yeI6UsUFmMFzcmz1OLnw==
   dependencies:
+    "@popperjs/core" "^2.9.2"
     "@types/lodash" "^4.14.168"
     "@types/styled-system" "^5.1.10"
     lodash "^4.17.20"
+    react-popper "^2.2.5"
     react-transition-group "^4.4.1"
     styled-system "^5.1.5"
 
@@ -3254,10 +3256,10 @@
     tiny-warning "^1.0.3"
     toformat "^2.0.0"
 
-"@pnghai/ichigoswap-uikit@^0.24.0":
-  version "0.24.0"
-  resolved "https://npm.pkg.github.com/download/@pnghai/ichigoswap-uikit/0.24.0/cb70e26c4168f8f816883fdd953dd1cc6df073da7c52b867857ceffc8d7dc6aa#9c5aa950f57654953a01b7a80e81a013babf064f"
-  integrity sha512-Fg0YTzMqB2uJE/J6uNUp11f5X74f1FdOPQksxPb5xa7PNSgGvNNbmCktm1FMRhuW9XxvsUHTwo+ULNfbD65w7g==
+"@pnghai/ichigoswap-uikit@^0.25":
+  version "0.25.0"
+  resolved "https://npm.pkg.github.com/download/@pnghai/ichigoswap-uikit/0.25.0/1d5d9f79bfa2005b4d7de5c38e03a97a08b485bfb2a0f21e0abad50498bf5428#f5ec9dc8e085b752d0fa925c9ff918d52bbd7a20"
+  integrity sha512-m1ndBQKWS1Osa+fOCswdvGT4DPa+bfI64nrtZZLvK8ASIr2G763fBNLes68GIJpr1oZxQWaqKHtSrJQwTblJYA==
   dependencies:
     "@popperjs/core" "^2.9.2"
     "@types/lodash" "^4.14.168"

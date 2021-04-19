@@ -31,6 +31,12 @@ function getTokenComparator(balances: {
     if (balanceComp !== 0) return balanceComp
 
     if (tokenA.symbol && tokenB.symbol) {
+      if (tokenA.symbol === 'STBE' && tokenB.symbol!=='BNB') {
+        return -1
+      }
+      if (tokenB.symbol === 'STBE'  && tokenA.symbol!=='BNB') {
+        return -1
+      }
       // sort by symbol
       return tokenA.symbol.toLowerCase() < tokenB.symbol.toLowerCase() ? -1 : 1
     }
