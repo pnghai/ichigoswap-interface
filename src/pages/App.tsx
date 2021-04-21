@@ -49,7 +49,7 @@ const BodyWrapper = styled.div`
 
   ${({ theme }) => theme.mediaQueries.lg} {
     background-image: url('/images/arch-${({ theme }) => (theme.isDark ? 'dark' : 'light')}.svg'),
-      url('/images/right.png'), url('/images/right.png');
+      url('/images/left.png'), url('/images/right.png');
     background-repeat: no-repeat;
     background-position: center 420px, 10% 230px, 90% 230px;
     background-size: contain, 266px, 266px;
