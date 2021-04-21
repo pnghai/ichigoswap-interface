@@ -16,6 +16,7 @@ import { ArrowWrapper, BottomGrouping, SwapCallbackError, Wrapper } from 'compon
 import TradePrice from 'components/swap/TradePrice'
 import TokenWarningModal from 'components/TokenWarningModal'
 import LeafWarningModal from 'components/LeafWarningModal'
+import SafeMoonWarningModal from 'components/SafeMoonWarningModal'
 import ProgressSteps from 'components/ProgressSteps'
 
 import { INITIAL_ALLOWED_SLIPPAGE } from 'constants/index'
@@ -46,8 +47,13 @@ const Swap = () => {
     useCurrency(loadedUrlParams?.outputCurrencyId),
   ]
   const [dismissTokenWarning, setDismissTokenWarning] = useState<boolean>(false)
-  const [isLeaf, setIsLeaf] = useState<boolean>(false)
-  const [leafTransactionType, setLeafTransactionType] = useState<string>('')
+  const [transactionWarning, setTransactionWarning] = useState<{
+    selectedToken: string | null
+    purchaseType: string | null
+  }>({
+    selectedToken: null,
+    purchaseType: null,
+  })
   const urlLoadedTokens: Token[] = useMemo(
     () => [loadedInputCurrency, loadedOutputCurrency]?.filter((c): c is Token => c instanceof Token) ?? [],
     [loadedInputCurrency, loadedOutputCurrency]
@@ -56,10 +62,12 @@ const Swap = () => {
     setDismissTokenWarning(true)
   }, [])
 
-  const handleConfirmLeafWarning = useCallback(() => {
-    setIsLeaf(false)
-    setLeafTransactionType('')
-  }, [])
+  const handleConfirmWarning = () => {
+    setTransactionWarning({
+      selectedToken: null,
+      purchaseType: null,
+    })
+  }
 
   const { account } = useActiveWeb3React()
   const theme = useContext(ThemeContext)
@@ -217,27 +225,32 @@ const Swap = () => {
     setSwapState((prevState) => ({ ...prevState, tradeToConfirm: trade }))
   }, [trade])
 
-  // This will check to see if the user has selected Leaf to either buy or sell.
+  // This will check to see if the user has selected Leaf or SafeMoon to either buy or sell.
   // If so, they will be alerted with a warning message.
-  const checkForLeaf = useCallback(
+  const checkForWarning = useCallback(
     (selected: string, purchaseType: string) => {
-      if (selected === 'leaf') {
-        setIsLeaf(true)
-        setLeafTransactionType(purchaseType)
+      if (['LEAF', 'SAFEMOON'].includes(selected)) {
+        setTransactionWarning({
+          selectedToken: selected,
+          purchaseType,
+        })
       }
     },
-    [setIsLeaf, setLeafTransactionType]
+    [setTransactionWarning]
   )
 
   const handleInputSelect = useCallback(
     (inputCurrency) => {
       setApprovalSubmitted(false) // reset 2 step UI for approvals
       onCurrencySelection(Field.INPUT, inputCurrency)
-      if (inputCurrency.symbol.toLowerCase() === 'leaf') {
-        checkForLeaf(inputCurrency.symbol.toLowerCase(), 'Selling')
+      if (inputCurrency.symbol === 'LEAF') {
+        checkForWarning(inputCurrency.symbol, 'Selling')
+      }
+      if (inputCurrency.symbol === 'SAFEMOON') {
+        checkForWarning(inputCurrency.symbol, 'Selling')
       }
     },
-    [onCurrencySelection, setApprovalSubmitted, checkForLeaf]
+    [onCurrencySelection, setApprovalSubmitted, checkForWarning]
   )
 
   const handleMaxInput = useCallback(() => {
@@ -249,11 +262,14 @@ const Swap = () => {
   const handleOutputSelect = useCallback(
     (outputCurrency) => {
       onCurrencySelection(Field.OUTPUT, outputCurrency)
-      if (outputCurrency.symbol.toLowerCase() === 'leaf') {
-        checkForLeaf(outputCurrency.symbol.toLowerCase(), 'Buying')
+      if (outputCurrency.symbol === 'LEAF') {
+        checkForWarning(outputCurrency.symbol, 'Buying')
+      }
+      if (outputCurrency.symbol === 'SAFEMOON') {
+        checkForWarning(outputCurrency.symbol, 'Buying')
       }
     },
-    [onCurrencySelection, checkForLeaf]
+    [onCurrencySelection, checkForWarning]
   )
 
   return (
@@ -264,10 +280,11 @@ const Swap = () => {
         onConfirm={handleConfirmTokenWarning}
       />
       <LeafWarningModal
-        isOpen={isLeaf}
-        transactionType={leafTransactionType}
-        onConfirm={handleConfirmLeafWarning}
+        isOpen={transactionWarning.selectedToken === 'LEAF'}
+        transactionType={transactionWarning.purchaseType}
+        onConfirm={handleConfirmWarning}
       />
+      <SafeMoonWarningModal isOpen={transactionWarning.selectedToken === 'SAFEMOON'} onConfirm={handleConfirmWarning} />
       <CardNav />
       <AppBody>
         <Wrapper id="swap-page">

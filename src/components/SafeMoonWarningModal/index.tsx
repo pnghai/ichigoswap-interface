@@ -1,6 +1,6 @@
 import React, { useCallback, useState } from 'react'
 import styled from 'styled-components'
-import { Button, Text } from '@pnghai/ichigoswap-uikit'
+import { Button, Text } from '@pancakeswap-libs/uikit'
 import { AlertTriangle } from 'react-feather'
 import Modal from '../Modal'
 import { AutoRow, RowBetween } from '../Row'
@@ -17,18 +17,10 @@ const WarningContainer = styled.div`
 `
 
 const StyledWarningIcon = styled(AlertTriangle)`
-  stroke: ${({ theme }) => theme.colors.failure};
+  stroke: ${({ theme }) => theme.colors.binance};
 `
 
-export default function LeafWarningModal({
-  isOpen,
-  transactionType,
-  onConfirm,
-}: {
-  isOpen: boolean
-  transactionType: string | null
-  onConfirm: () => void
-}) {
+export default function SafeMoonWarningModal({ isOpen, onConfirm }: { isOpen: boolean; onConfirm: () => void }) {
   const [understandChecked, setUnderstandChecked] = useState(false)
   const toggleUnderstand = useCallback(() => setUnderstandChecked((uc) => !uc), [])
 
@@ -39,25 +31,22 @@ export default function LeafWarningModal({
         <AutoColumn gap="lg">
           <AutoRow gap="6px">
             <StyledWarningIcon />
-            <Text color="failure">Leaf Warning</Text>
+            <Text>Notice for trading SafeMoon</Text>
           </AutoRow>
-          {transactionType !== '' && (
-            <>
-              <Text color="failure">
-                Please be careful when <strong>{transactionType}</strong> LEAF.
-              </Text>
-              <Text color="failure">
-                {transactionType === 'Buying'
-                  ? 'You will not receive STBE rewards for holding purchased LEAF.'
-                  : 'You will need to buy back the same amount of LEAF to be able to convert back to STBE.'}
-              </Text>
-            </>
-          )}
+          <>
+            <Text>
+              To trade SAFEMOON, you must click on the settings icon and{' '}
+              <strong>set your slippage tolerance to 12%+</strong>
+            </Text>
+            <Text>This is because SafeMoon taxes a 10% fee on each transaction.</Text>
+            <Text>• 5% fee = redistributed to all existing holders</Text>
+            <Text>• 5% fee = used to add liquidity</Text>
+          </>
           <RowBetween>
             <div>
               <label htmlFor="understand-checkbox" style={{ cursor: 'pointer', userSelect: 'none' }}>
                 <input
-                  id="understand-checkbox"
+                  id="understand-safeMoonWarning"
                   type="checkbox"
                   className="understand-checkbox"
                   checked={understandChecked}
@@ -67,6 +56,7 @@ export default function LeafWarningModal({
               </label>
             </div>
             <Button
+              id="confirm-safeMoonWarning"
               disabled={!understandChecked}
               variant="danger"
               style={{ width: '140px' }}
