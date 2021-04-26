@@ -232,7 +232,15 @@
       "address": "0x641f5D9220b5d15A2A62455c61ef0455c34ECF11",
       "chainId": 97,
       "decimals": 18,
-      "logoURI": "https://exchange.strawberryswap.link/images/coins/stbe.png"
+      "logoURI": "https://exchange.strawberryswap.link/images/coins/0x641f5D9220b5d15A2A62455c61ef0455c34ECF11.png"
+    },
+    {
+      "name": "StrawberrySwap Token",
+      "symbol": "STBE",
+      "address": "0x5B43c79A7Dafb7f853EC82db0Ee77138C5c0E48F",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://exchange.strawberryswap.link/images/coins/0x5B43c79A7Dafb7f853EC82db0Ee77138C5c0E48F.png"
     },
     {
       "name": "Streamity",
