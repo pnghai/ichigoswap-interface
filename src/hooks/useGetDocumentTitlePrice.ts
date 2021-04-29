@@ -5,7 +5,7 @@ import { STBE } from '../constants'
 const useGetDocumentTitlePrice = () => {
   const priceData = useGetPriceData()
 
-  const stbePriceUsd = priceData ? Number(priceData.data[STBE.address] ? priceData.data[STBE.address].price : 0) : 0
+  const stbePriceUsd = priceData && priceData.data ? Number(priceData.data[STBE.address] ? priceData.data[STBE.address].price : 0) : 0
 
   const stbePriceUsdString =
     Number.isNaN(stbePriceUsd) || stbePriceUsd === 0
