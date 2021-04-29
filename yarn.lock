@@ -3256,10 +3256,10 @@
     tiny-warning "^1.0.3"
     toformat "^2.0.0"
 
-"@pnghai/ichigoswap-uikit@^0.28":
-  version "0.28.0"
-  resolved "https://npm.pkg.github.com/download/@pnghai/ichigoswap-uikit/0.28.0/5e8ba6d74b4e491e604b858477e1eb0c74fee923d0e4d83f4eb03676d0370644#5735c486ce1e6c4bc513d03cda26f52a30d82785"
-  integrity sha512-+ePQjeEN29Yc8Yzs6dQ/g9j0G4XFuvJGRv+MWYh98fDswj+ypLDZKP/bdMRHDo2N4goxKeyGJ9DtGwJc+BcI3Q==
+"@pnghai/ichigoswap-uikit@^0.26":
+  version "0.26.0"
+  resolved "https://npm.pkg.github.com/download/@pnghai/ichigoswap-uikit/0.26.0/c83d8883596bce4c6b98ee448a0fd42557e5c82e73aeea99b682dc8121a1d94e#48072ecd27cef13ed0d8f541b2c45fcea0f4a28c"
+  integrity sha512-BzEF3ExgL2g+kEzcIJ56x4zR8diVrlf1Ed4s6U6hAW0/B8+ZGoOQnapbftbYv97c7AQmxQWaCBdXNw0MIJ9bmA==
   dependencies:
     "@popperjs/core" "^2.9.2"
     "@types/lodash" "^4.14.168"
