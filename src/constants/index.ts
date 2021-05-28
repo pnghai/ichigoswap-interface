@@ -1,7 +1,7 @@
 import { ChainId, JSBI, Percent, Token, WETH } from '@pnghai/ichigoswap-sdk'
 
 export const ROUTER_ADDRESS = process.env.REACT_APP_ROUTER_ADDRESS || '0x61355c3a231680e76773b117CC3A03FEdCE1840a'
-export const STBE_FACTORY_ADDRESS = process.env.STBE_FACTORY_ADDRESS || '0xBe9A2f33FC73cFa66C70BC2Ac6066aC5c91eA025'
+export const STBE_FACTORY_ADDRESS = process.env.REACT_APP_STBE_FACTORY_ADDRESS || '0xBe9A2f33FC73cFa66C70BC2Ac6066aC5c91eA025'
 export const INIT_CODE = '0x351e068bf9ed8b5fc37ce956f40ca9614882402b3bdb61800be1258f1108b4b6'
 
 // a list of tokens by chain
