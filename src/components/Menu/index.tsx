@@ -32,7 +32,7 @@ const Menu: React.FC = (props) => {
       langs={allLanguages}
       setLang={setSelectedLanguage}
       stbePriceUsd={stbePriceUsd}
-      priceLink={process.env.REACT_APP_INFO_LINK+'/token/'+STBE_ADDRESS]}
+      priceLink={process.env.REACT_APP_INFO_LINK+'/token/'+STBE_ADDRESS}
       profile={profile}
       {...props}
     />
