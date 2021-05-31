@@ -10,7 +10,7 @@
     "@pancakeswap-libs/sdk": "1.0.1",
     "@pancakeswap-libs/uikit": "^0.25.3",
     "@pnghai/ichigoswap-sdk": "1.0.2",
-    "@pnghai/ichigoswap-uikit": "^0.26",
+    "@pnghai/ichigoswap-uikit": "^0.28.1",
     "@popperjs/core": "^2.4.4",
     "@reach/dialog": "^0.10.3",
     "@reach/portal": "^0.10.3",

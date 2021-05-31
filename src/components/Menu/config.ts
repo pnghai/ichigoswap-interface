@@ -1,10 +1,10 @@
 import { MenuEntry } from '@pnghai/ichigoswap-uikit'
-
+export const MAIN_APP_LINK = process.env.REACT_APP_MAIN_APP_LINK || 'https://test1.strawberryswap.link'
 const config: MenuEntry[] = [
   {
     label: 'Home',
     icon: 'HomeIcon',
-    href: 'https://test1.strawberryswap.link/',
+    href: MAIN_APP_LINK,
   },
   {
     label: 'Trade',
@@ -24,22 +24,22 @@ const config: MenuEntry[] = [
   {
     label: 'Farms',
     icon: 'FarmIcon',
-    href: 'https://test1.strawberryswap.link/farms',
+    href: MAIN_APP_LINK+'/farms',
   },
   {
     label: 'Pools',
     icon: 'PoolIcon',
-    href: 'https://test1.strawberryswap.link/pools',
+    href: MAIN_APP_LINK+'/pools',
   },
   {
     label: 'Lottery',
     icon: 'TicketIcon',
-    href: 'https://test1.strawberryswap.link/lottery',
+    href: MAIN_APP_LINK+'/lottery',
   },
   // {
   //   label: 'NFT',
   //   icon: 'NftIcon',
-  //   href: 'https://test1.strawberryswap.link/nft',
+  //   href: MAIN_APP_LINK+'/nft',
   // },
   // {
   //   label: 'Teams & Profile',
@@ -48,15 +48,15 @@ const config: MenuEntry[] = [
   //   items: [
   //     {
   //       label: 'Leaderboard',
-  //       href: 'https://test1.strawberryswap.link/teams',
+  //       href: MAIN_APP_LINK+'/teams',
   //     },
   //     {
   //       label: 'Task Center',
-  //       href: 'https://test1.strawberryswap.link/profile/tasks',
+  //       href: MAIN_APP_LINK+'/profile/tasks',
   //     },
   //     {
   //       label: 'Your Profile',
-  //       href: 'https://test1.strawberryswap.link/profile',
+  //       href: MAIN_APP_LINK+'/profile',
   //     },
   //   ],
   // },
@@ -85,7 +85,7 @@ const config: MenuEntry[] = [
   // {
   //   label: 'IFO',
   //   icon: 'IfoIcon',
-  //   href: 'https://test1.strawberryswap.link/ifo',
+  //   href: MAIN_APP_LINK+'/ifo',
   // },
   {
     label: 'More',

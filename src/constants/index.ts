@@ -31,7 +31,7 @@ export const ETH = new Token(
 export const BETH = new Token(ChainId.MAINNET, '0x250632378E573c6Be1AC2f97Fcdf00515d0Aa91B', 18, 'BETH', 'Binance Beacon Ethereum Token')
 export const STBE = new Token(ChainId.MAINNET, '0x93c965af6f56cf645CDe99e56d008E95C1f9F040', 18, 'STBE', 'StrawberrySwap token')
 
-export const TSTBE = new Token(ChainId.BSCTESTNET, '0x641f5D9220b5d15A2A62455c61ef0455c34ECF11', 18, 'STBE', 'StrawberrySwap Token')
+export const TSTBE = new Token(ChainId.BSCTESTNET, '0x0C2f6bE9E8135c2B8B4F4271e1D543c9b8d7433a', 18, 'STBE', 'StrawberrySwap Token')
 export const TBUSD = new Token(ChainId.BSCTESTNET, '0xed24fc36d5ee211ea25a80239fb8c4cfd80f12ee', 18, 'BUSD', 'Testnet Binance USD')
 export const TETH = new Token(ChainId.BSCTESTNET, '0xd66c6b4f0be8ce5b39d52e0fd1344c389929b378', 18, 'ETH', 'Testnet Binance ETH')
 export const TBTC = new Token(ChainId.BSCTESTNET, '0x6ce8da28e2f864420840cf74474eff5fd80e65b8', 18, 'BTCB', 'Testnet Binance BTC')

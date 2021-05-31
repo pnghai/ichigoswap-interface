@@ -8,8 +8,9 @@ import useGetPriceData from 'hooks/useGetPriceData'
 import useGetLocalProfile from 'hooks/useGetLocalProfile'
 import useAuth from 'hooks/useAuth'
 import links from './config'
-import { STBE } from '../../constants'
-
+import { STBE, TSTBE } from '../../constants'
+import { NETWORK_CHAIN_ID } from '../../connectors'
+const STBE_ADDRESS = NETWORK_CHAIN_ID == 56 ? STBE.address : TSTBE.address
 const Menu: React.FC = (props) => {
   const { account } = useWeb3React()
   const { login, logout } = useAuth()
@@ -31,6 +32,7 @@ const Menu: React.FC = (props) => {
       langs={allLanguages}
       setLang={setSelectedLanguage}
       stbePriceUsd={stbePriceUsd}
+      priceLink={process.env.REACT_APP_INFO_LINK+'/token/'+STBE_ADDRESS]}
       profile={profile}
       {...props}
     />
