@@ -1,4 +1,5 @@
 import { MenuEntry } from '@pnghai/ichigoswap-uikit'
+
 export const MAIN_APP_LINK = process.env.REACT_APP_MAIN_APP_LINK || 'https://test1.strawberryswap.link'
 const config: MenuEntry[] = [
   {
@@ -24,17 +25,17 @@ const config: MenuEntry[] = [
   {
     label: 'Farms',
     icon: 'FarmIcon',
-    href: MAIN_APP_LINK+'/farms',
+    href: `${MAIN_APP_LINK}/farms`,
   },
   {
     label: 'Pools',
     icon: 'PoolIcon',
-    href: MAIN_APP_LINK+'/pools',
+    href: `${MAIN_APP_LINK}/pools`,
   },
   {
     label: 'Lottery',
     icon: 'TicketIcon',
-    href: MAIN_APP_LINK+'/lottery',
+    href: `${MAIN_APP_LINK}/lottery`,
   },
   // {
   //   label: 'NFT',
