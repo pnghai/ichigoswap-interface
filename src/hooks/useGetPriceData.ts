@@ -12,7 +12,7 @@ type ApiResponse = {
   }
 }
 
-const api = process.env.REACT_APP_INFO_API || 'https://api-info.strawberryswap.link/api/tokens'
+const api = `${process.env.REACT_APP_INFO_API || 'https://api-info.strawberryswap.link'}/api/tokens`
 
 const useGetPriceData = () => {
   const [data, setData] = useState<ApiResponse | null>(null)
