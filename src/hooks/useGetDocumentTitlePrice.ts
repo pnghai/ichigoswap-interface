@@ -9,7 +9,6 @@ const useGetDocumentTitlePrice = () => {
   const priceData = useGetPriceData()
 
   const stbePriceUsd = priceData && priceData.data ? Number(priceData.data[STBE_ADDRESS] ? priceData.data[STBE_ADDRESS].price : 0) : 0
-  console.log("🚀 ~ file: useGetDocumentTitlePrice.ts ~ line 9 ~ useGetDocumentTitlePrice ~ stbePriceUsd", stbePriceUsd)
 
   const stbePriceUsdString =
     Number.isNaN(stbePriceUsd) || stbePriceUsd === 0
